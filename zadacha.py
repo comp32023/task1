@@ -13,7 +13,7 @@ def red():
     btns['style'] = "BW.TLabel"
 
 btns = ttk.Button(text='Покраска в красный', command=red) #Кнопкав нижнем левом углу
-btns.place(relx=.0, rely=1, anchor='sw')
+btns.place(relx=.0, rely=1, anchor='sw', width=120, height=25)
 
 def purple():
     styles = ttk.Style()
@@ -21,7 +21,7 @@ def purple():
     btn['style'] = "BW.TLabel"
 
 btn = ttk.Button(text='Покраска в фиолетовый', command=purple) #Кнопка внизу центра
-btn.place(relx=0.5, rely=1, anchor='s')
+btn.place(relx=0.5, rely=1, anchor='s', width=120, height=25)
 
 def black():
     style = ttk.Style()
@@ -29,6 +29,8 @@ def black():
     buttonTTK['style'] = "BW.TLabel"
 
 buttonTTK = ttk.Button(text="Покраска в чёрный", command=black) #Кнопка в правом нижнем углу
-buttonTTK.place(relx=1, rely=1, anchor='se')
+buttonTTK.place(relx=1, rely=1, anchor='se', width=120, height=25)
+
+button = Button(text = 'Submit', bg='white', activebackground='blue').pack()
 
 root.mainloop()
