@@ -5,3 +5,23 @@
 #Задание для Костяна-коллеги : Сделать три кнопки и расположить их в самом низу,
 # у кнопок должен быть какой-либо эффект, либо кнопка меняется либо что-то выходит на экран
 
+from tkinter import *
+
+root = Tk()
+root.title('Приложение')
+root.geometry('400x400')
+photo = PhotoImage(file='./legion.png')
+label = Label(text='Legion\n'
+                   'Наша компания\n '
+                   'позиционируется\n '
+                   'на играх, \n '
+                   'и просто помогает\n '
+                   'убить время',
+                image=photo, borderwidth=2,
+              compound='left')
+
+
+
+label.pack(anchor='e')
+
+root.mainloop()
